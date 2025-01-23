@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Información - IEB</title>
+    <link rel="stylesheet" href="../Styles/styles.css">
+    <link rel="stylesheet" href="../Styles/empleado-detalle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Gestor del Talento Humano</h1>
+    </header>
+
+    <div class="container">
+        <nav class="menu">
+            <h2>Menú</h2>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="informes.html">Informes e Indicadores</a></li>
+                <li><a href="listado-empleados.html">Listado de Empleados</a></li>
+                <li><a href="metadatos.html">Gestión de Metadatos</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <div class="profile-container">
+                <div class="profile-header">
+                    <div class="profile-photo">
+                        <img src="" alt="Foto de perfil">
+                    </div>
+                    <div class="profile-info-header">
+                        <h2></h2>
+                        <p class="profile-position"></p>
+                        <p class="profile-department"></p>
+                        <div class="profile-status">
+                            <span class="status-dot"></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-actions">
+                    <div class="action-buttons">
+                        <button class="btn-actualizar">
+                            <i class="fas fa-sync-alt"></i>
+                            Actualizar
+                        </button>
+                        <button class="btn-export">
+                            <i class="fas fa-file-export"></i>
+                            Exportar
+                        </button>
+                    </div>
+                    <div class="employee-selector">
+                        <select id="employeeSelect">
+                            <option value="2345678">Cadavid Escobar Juan Pablo</option>
+                            <option value="3456789">Arroyave Loaiza Esteban</option>
+                            <option value="4567890">Gómez Pérez María</option>
+                            <option value="5678901">Rodríguez López Carlos</option>
+                        </select>
+                    </div>
+                </div>
+
+                <nav class="profile-nav">
+                    <a href="#informacion-basica" class="active">
+                        <i class="fas fa-info-circle"></i>
+                        Información Básica
+                    </a>
+                    <a href="#informacion-personal">
+                        <i class="fas fa-user"></i>
+                        Información Personal
+                    </a>
+                    <a href="#novedades-empleados">
+                        <i class="fas fa-bell"></i>
+                        Novedades de Empleados
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-phone-alt"></i>
+                        Contacto Emergencias
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-shield-alt"></i>
+                        Seguridad Social
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-users"></i>
+                        Familiares
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-file-alt"></i>
+                        Archivos
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-graduation-cap"></i>
+                        Info. Académica
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-heartbeat"></i>
+                        Info. Médica
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-book"></i>
+                        Publicaciones
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-laptop-code"></i>
+                        Datos tecnología
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-chart-line"></i>
+                        Planes desarrollo
+                    </a>
+                </nav>
+
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h3><i class="fas fa-user"></i> Información Personal</h3>
+                        <div class="info-item">
+                            <div class="info-label">Cédula</div>
+                            <div class="info-value"></div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Fecha de Nacimiento</div>
+                            <div class="info-value"></div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Correo Electrónico</div>
+                            <div class="info-value"></div>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3><i class="fas fa-briefcase"></i> Información Laboral</h3>
+                        <div class="info-item">
+                            <div class="info-label">Cargo Actual</div>
+                            <div class="info-value"></div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Unidad</div>
+                            <div class="info-value"></div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Fecha de Ingreso</div>
+                            <div class="info-value"></div>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3><i class="fas fa-building"></i> Ubicación y Contrato</h3>
+                        <div class="info-item">
+                            <div class="info-label">Tipo de Contrato</div>
+                            <div class="info-value"></div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Sede</div>
+                            <div class="info-value"></div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Modalidad</div>
+                            <div class="info-value"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-content" id="informacion-basica">
+                    <!-- El contenido actual de info-grid -->
+                </div>
+
+                <div class="section-content" id="informacion-personal" style="display: none;">
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <h3><i class="fas fa-home"></i> Información de Residencia</h3>
+                            <div class="info-item">
+                                <div class="info-label">Dirección</div>
+                                <div class="info-value">Calle 123 #45-67</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Ciudad</div>
+                                <div class="info-value">Medellín</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Teléfono</div>
+                                <div class="info-value">+57 300 123 4567</div>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <h3><i class="fas fa-id-card"></i> Documentación</h3>
+                            <div class="info-item">
+                                <div class="info-label">Tipo de Documento</div>
+                                <div class="info-value">Cédula de Ciudadanía</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-label">Lugar de Expedición</div>
+                                <div class="info-value">Medellín, Antioquia</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-content" id="novedades-empleados" style="display: none;">
+                    <!-- Contenido de novedades -->
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../Scripts/empleado-detalle.js"></script>
+</body>
+</html> 

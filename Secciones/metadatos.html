@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Gestión de Metadatos - Gestor del Talento Humano</title>
+    <link rel="stylesheet" href="../Styles/styles.css">
+    <link rel="stylesheet" href="../Styles/metadatos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Gestor del Talento Humano</h1>
+    </header>
+
+    <div class="container">
+        <nav class="menu">
+            <h2>Menú</h2>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="informes.html">Informes e Indicadores</a></li>
+                <li><a href="listado-empleados.html">Listado de Empleados</a></li>
+                <li><a href="metadatos.html" class="active">Gestión de Metadatos</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <div class="metadata-header">
+                <h2><i class="fas fa-database"></i> Gestión de Metadatos</h2>
+                <div class="metadata-actions">
+                    <button class="btn-primary">
+                        <i class="fas fa-plus"></i> Nuevo Campo
+                    </button>
+                    <button class="btn-secondary">
+                        <i class="fas fa-download"></i> Exportar Estructura
+                    </button>
+                </div>
+            </div>
+
+            <div class="metadata-grid">
+                <div class="metadata-card">
+                    <div class="card-header">
+                        <h3><i class="fas fa-user"></i> Datos Personales</h3>
+                        <span class="badge">12 campos</span>
+                    </div>
+                    <div class="card-content">
+                        <table class="metadata-table">
+                            <thead>
+                                <tr>
+                                    <th>Campo</th>
+                                    <th>Tipo</th>
+                                    <th>Obligatorio</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Nombre Completo</td>
+                                    <td><span class="type-badge text">Texto</span></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td class="actions">
+                                        <button title="Editar"><i class="fas fa-edit"></i></button>
+                                        <button title="Eliminar"><i class="fas fa-trash-alt"></i></button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Fecha de Nacimiento</td>
+                                    <td><span class="type-badge date">Fecha</span></td>
+                                    <td><i class="fas fa-check text-success"></i></td>
+                                    <td class="actions">
+                                        <button title="Editar"><i class="fas fa-edit"></i></button>
+                                        <button title="Eliminar"><i class="fas fa-trash-alt"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="metadata-card">
+                    <div class="card-header">
+                        <h3><i class="fas fa-briefcase"></i> Datos Laborales</h3>
+                        <span class="badge">8 campos</span>
+                    </div>
+                    <div class="card-content">
+                        <!-- Similar table structure -->
+                    </div>
+                </div>
+
+                <div class="metadata-card">
+                    <div class="card-header">
+                        <h3><i class="fas fa-graduation-cap"></i> Formación Académica</h3>
+                        <span class="badge">6 campos</span>
+                    </div>
+                    <div class="card-content">
+                        <!-- Similar table structure -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html> 

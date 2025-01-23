@@ -1,0 +1,180 @@
+.metadata-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.metadata-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-primary, .btn-secondary {
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: white;
+}
+
+.btn-secondary {
+    background: white;
+    color: var(--secondary-color);
+    border: 1px solid #e0e4e8;
+}
+
+.metadata-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1.5rem;
+}
+
+.metadata-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+
+.card-header {
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-bottom: 1px solid #e0e4e8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.badge {
+    background: var(--primary-color);
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.metadata-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.metadata-table th,
+.metadata-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e0e4e8;
+}
+
+.type-badge {
+    padding: 0.3rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.type-badge.text {
+    background: #e3f2fd;
+    color: #1976d2;
+}
+
+.type-badge.date {
+    background: #f3e5f5;
+    color: #7b1fa2;
+}
+
+.actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+.actions button:hover {
+    color: var(--primary-color);
+}
+
+.text-success {
+    color: #28a745;
+}
+
+@media (max-width: 768px) {
+    .metadata-header {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+    
+    .metadata-actions {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .metadata-grid {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+
+    .metadata-card {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .card-header {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .metadata-table {
+        font-size: 0.9rem;
+    }
+
+    .metadata-table th,
+    .metadata-table td {
+        padding: 0.75rem 0.5rem;
+    }
+
+    .type-badge {
+        padding: 0.2rem 0.4rem;
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .metadata-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .metadata-table {
+        font-size: 0.8rem;
+    }
+
+    .actions {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .actions button {
+        padding: 0.5rem;
+    }
+} 

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor del Talento Humano</title>
+    <link rel="stylesheet" href="Styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gestor del Talento Humano</h1>
+    </header>
+
+    <div class="container">
+        <nav class="menu">
+            <h2>Menú</h2>
+            <ul>
+                <li><a href="Secciones/informes.html">Informes e Indicadores</a></li>
+                <li><a href="Secciones/listado-empleados.html">Listado de Empleados</a></li>
+                <li><a href="Secciones/metadatos.html">Gestión de Metadatos</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <div class="welcome-section">
+                <div class="welcome-text">
+                    <h2>Bienvenido al Sistema de Gestión del Talento Humano</h2>
+                    <div class="welcome-description">
+                        <p class="lead">Una plataforma integral diseñada para gestionar eficientemente el capital humano de nuestra organización.</p>
+                        <div class="feature-list">
+                            <div class="feature-item">
+                                <i class="fas fa-users"></i>
+                                <span>Gestión completa de información de empleados</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Indicadores y métricas en tiempo real</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-file-alt"></i>
+                                <span>Documentación centralizada</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="welcome-image">
+                    <img src="https://static.wixstatic.com/media/b7da22_3f8a8927b40141a88cf39e34fb7da690~mv2_d_3000_1962_s_2.jpg/v1/fill/w_568,h_372,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/b7da22_3f8a8927b40141a88cf39e34fb7da690~mv2_d_3000_1962_s_2.jpg" alt="Equipo de trabajo colaborativo" class="team-image">
+                    <div class="image-overlay"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const empleadosLink = document.querySelector('a[href="#empleados"]');
+        empleadosLink?.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.location.href = 'listado-empleados.html';
+        });
+    });
+    </script>
+</body>
+</html>
